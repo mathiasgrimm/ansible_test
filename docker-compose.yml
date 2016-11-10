@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+    
+    ubuntu1:
+        build:
+            context: ./ubuntu1
+
+    ubuntu2:
+        build:
+            context: ./ubuntu2
+
+    ansible:
+        build:
+            context: ./ansible
+        volumes:
+            - ./code/:/root/code
